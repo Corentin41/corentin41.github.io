@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="annexes/avatar.png">
+    <link href="style_desktop.css" rel="stylesheet">
+    <link href="style_tablet.css" rel="stylesheet">
+    <link href="style_mobile.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Corentin Rio</title>
+</head>
+
+<body>
+
+    <!----- NAVBAR ----->
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#presentation">Présentation</a>
+        <a href="#cv">Mon CV</a>
+        <a href="#competences">Compétences</a>
+        <a href="#experiences">Expériences et Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="menuBurgerBackground">
+        <div class="menuBurger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="navMobile">
+        <div class="ulMobile">
+            <a href="#">Accueil</a>
+            <a href="#presentation">Présentation</a>
+            <a href="#cv">Mon CV</a>
+            <a href="#competences">Compétences</a>
+            <a href="#experiences">Expériences et Projets</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!----- HEADER ----->
+    <header>
+        <div class="title">
+            <h1>Corentin Rio</h1>
+            <h2>Développeur Informatique</h2>
+            <a href="#presentation">&#8681</a>
+        </div>
+    </header>
+
+    <!----- PRESENTATION ----->
+    <div id="presentation" class="presentation">
+        <h1>&#60; Présentation /&#62; </h1>
+        <div class="presentation_content">
+            <img class="avatar" src="annexes/avatar.png" draggable="false">
+            <p>
+                Hi!<br>
+                My name is Corentin Rio and I am 20 years old. I’m currently
+                studying in a 2-year degree in multimedia and internet jobs.
+                Thanks to this versatile course, I’m pretty comfortable with
+                the graphic design programs like Illustrator and InDesign. I
+                also have good knowledge in programming languages like
+                HTML, CSS, JavaScript, PHP and SQL.<br>
+                When I work on a project, I’m organized and meticulous.
+                Whenever I create a website, I like to structure the webpage
+                and add some animations to make the website more
+                vibrant. I’m always dedicated in my work. I like well done
+                work.<br>
+                I hope you’ll enjoy your visit, don’t hesitate to contact me if
+                you need further information.
+            </p>
+        </div>
+    </div>
+
+    <!----- CV ----->
+    <div id="cv" class="cv">
+        <h1>&#60; Mon CV /&#62; </h1>
+        <div class="cv_content">
+            <img class="cv_preview" src="annexes/cv.jpg" draggable="false">
+            <a class="download_btn" href="annexes/cv.pdf" target="_blank"><span>Télécharger le CV</span></a>
+        </div>
+    </div>
+
+    <!----- COMPETENCES ----->
+    <div id="competences" class="competences">
+        <h1>&#60; Compétences /&#62; </h1>
+
+        <div class="competences_content">
+            <div class="competence">
+                <img src="annexes/icon_web.png" draggable="false">
+                <h3>Développement Web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, id repellendus laudantium alias amet
+                    est sint at veritatis magnam iure, recusandae rerum minima obcaecati corporis. Maxime perferendis
+                    iste excepturi voluptatum.</p>
+            </div>
+
+            <div class="competence">
+                <img src="annexes/icon_smartphone.png" draggable="false">
+                <h3>Développement Mobile</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quaerat quo. Pariatur odit
+                    exercitationem, cumque quasi expedita quibusdam laborum nemo esse ipsam hic, sapiente dolorum eum
+                    vero deleniti possimus dolores?</p>
+            </div>
+        </div>
+
+        <div class="competences_content">
+            <div class="competence">
+                <img src="annexes/icon_design.png" draggable="false">
+                <h3>Design et Infographie</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis mollitia doloremque qui, dolor
+                    repudiandae provident corrupti error pariatur hic. Animi error placeat alias ducimus distinctio
+                    aspernatur ullam mollitia ipsum! In?</p>
+            </div>
+
+            <div class="competence">
+                <img src="annexes/icon_megaphone.png" draggable="false">
+                <h3>Communication et Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci dolorum ea soluta saepe
+                    suscipit esse nam ducimus, deserunt laborum expedita obcaecati ad harum minus dignissimos aspernatur
+                    laudantium culpa a?</p>
+            </div>
+        </div>
+    </div>
+
+    <!----- COMPETENCES SLIDER ----->
+    <h2 class="slider_title">Langages et logiciels maîtrisés</h2>
+    <div class="slider_body">
+        <div class="slider">
+            <i id="left" class="arrow fa-solid fa-angle-left">&#10094</i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_html.png" alt="img" draggable="false"></div>
+                    <h2>HTML5</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_css.png" alt="img" draggable="false"></div>
+                    <h2>CSS3</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_javascript.png" alt="img" draggable="false"></div>
+                    <h2>JavaScript</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_php.png" alt="img" draggable="false"></div>
+                    <h2>PHP</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_sql.png" alt="img" draggable="false"></div>
+                    <h2>SQL</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_angular.png" alt="img" draggable="false"></div>
+                    <h2>Angular</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_bootstrap.png" alt="img" draggable="false"></div>
+                    <h2>Bootstrap</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_java.png" alt="img" draggable="false"></div>
+                    <h2>Java</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_android.png" alt="img" draggable="false"></div>
+                    <h2>Android Studio</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_illustrator.png" alt="img" draggable="false"></div>
+                    <h2>Adobe Illustrator</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_indesign.png" alt="img" draggable="false"></div>
+                    <h2>Adobe InDesign</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="annexes/icon_github_desktop.png" alt="img" draggable="false"></div>
+                    <h2>GitHub Desktop</h2>
+                </li>
+            </ul>
+            <i id="right" class="arrow fa-solid fa-angle-right">&#10095</i>
+        </div>
+    </div>
+
+    <!----- EXPERIENCES ----->
+    <div id="experiences" class="experiences">
+        <h1>&#60; Expériences et Projets /&#62; </h1>
+
+        <div class="experiences_content">
+            <div class="projets">
+                <!----- STAGE NEOLINK ----->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Stage Néolink</h2>
+                            <h3>Gestion de tickets de maintenance en PHP</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-card-content">
+                                <h1>Stage Néolink</h1>
+                                <p>Stage de 12 semaines au sein de Néolink dans le cadre de ma Licence
+                                    informatique. Prise en charge de tickets de maintenance en PHP sur le framework
+                                    maison de Néolink : Phuton</p>
+                                <a href="stage_neolink.html"><button class="experience_btn">Plus
+                                        d'informations</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----- STAGE CNRS ----->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Stage CNRS</h2>
+                            <h3>Projet MATEX</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-card-content">
+                                <h1>Stage CNRS Projet MATEX</h1>
+                                <p>Stage de 12 semaines au sein du CNRS d'Orléans dans le cadre de mon DUT. Réalisations
+                                    d'éléments de communication pour lancer le projet ARD MATEX porté par la région
+                                    CVL</p>
+                                <a href="stage_cnrs.html"><button class="experience_btn">Plus
+                                        d'informations</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----- COOKIE CLICKER ----->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Projet Mobile</h2>
+                            <h3>Cookie Clicker</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-card-content">
+                                <h1>Projet Mobile<br>Cookie Clicker</h1>
+                                <p>Réalisation d'une application mobile en Java dans le cadre de ma Licence Informatique
+                                </p>
+                                <a href="projet_cookie.html"><button class="experience_btn">Plus
+                                        d'informations</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projets">
+                <!----- TIC TAC TOE ----->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Projet Mobile</h2>
+                            <h3>Tic Tac Toe</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-card-content">
+                                <h1>Projet Mobile<br>Tic Tac Toe</h1>
+                                <p>Réalisation d'une application mobile en Java</p>
+                                <a href="projet_tictactoe.html"><button class="experience_btn">Plus
+                                        d'informations</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----- INTEGRATION WEB ----->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Intégration Web</h2>
+                            <h3>Responsive Web Design (HTML/CSS)</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-card-content">
+                                <h1>Intégration Web</h1>
+                                <p>Intégration d'une page web responsive en HTML/CSS</p>
+                                <a href="integration_web.html"><button class="experience_btn">Plus
+                                        d'informations</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----- INTEGRATION WEB BOOTSTRAP ----->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Intégration Web</h2>
+                            <h3>Responsive Web Design (Bootstrap)</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-card-content">
+                                <h1>Intégration Web</h1>
+                                <p>Intégration d'une page web responsive avec Bootstrap</p>
+                                <a href="integration_web_bootstrap.html"><button class="experience_btn">Plus
+                                        d'informations</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projets">
+                <!----- PROJET TUTEURE ----->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Projet Tuteuré</h2>
+                            <h3>La compagnie des <br> p'tits loups</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-card-content">
+                                <h1>Projet Tuteuré</h1>
+                                <p>Réalisation d'éléments de communication pour une micro-crèche</p>
+                                <a href="projet_tuteure.html"><button class="experience_btn">Plus
+                                        d'informations</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----- AFFICHE ----->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Design</h2>
+                            <h3>Affiche Minimaliste</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-card-content">
+                                <h1>Affiche Minimaliste</h1>
+                                <p>Réalisation d'une affiche sur Adobe Illustrator</p>
+                                <a href="affiche_minimaliste.html"><button class="experience_btn">Plus
+                                        d'informations</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----- AFFICHE ----->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Design</h2>
+                            <h3>Affiche Typographique</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-card-content">
+                                <h1>Affiche Typographique</h1>
+                                <p>Réalisation d'une affiche sur Adobe InDesign</p>
+                                <a href="affiche_typoraphique.html"><button class="experience_btn">Plus
+                                        d'informations</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!----- CONTACT ----->
+    <div id="contact" class="contact">
+        <h1>&#60; Contact /&#62; </h1>
+        <p>Si besoin, vous pouvez me contacter :</p>
+
+        <div class="contact_detail">
+            <img src="annexes/email.png" draggable="false">
+            <a href="mailto:corentin.rio41@gmail.com">corentin.rio41@gmail.com</a>
+        </div>
+
+        <div class="contact_detail">
+            <img src="annexes/linkedin.png" draggable="false">
+            <a href="https://www.linkedin.com/in/corentin-rio-a7603b227/">Corentin Rio</a>
+        </div>
+
+    </div>
+
+    <!----- FOOTER ----->
+    <footer><span class="year"></span> &copy; Corentin Rio - Tous droits réservés</footer>
+
+</body>
+
+</html>
