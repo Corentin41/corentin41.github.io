@@ -15,7 +15,7 @@
     nav {
         padding-top: 2%;
         padding-bottom: 2%;
-        background-color: #212529;
+        background-color: #0553B1;
         text-align: center;
         position: fixed;
         width: 100%;
@@ -127,8 +127,7 @@
 
     .download_btn {
         text-align: center;
-        width: 50%;
-        margin-left: 5%;
+        width: 100%;
         top: 5vh;
     }
 
@@ -141,9 +140,8 @@
         transform: translate(-50%, -50%);
     }
 
-    .cv a {
+    .download_btn a {
         display: block;
-        width: 50%;
         height: 40px;
         line-height: 40px;
         font-size: 18px;
@@ -158,27 +156,27 @@
         text-transform: uppercase;
     }
 
-    .cv a span {
+    .download_btn a span {
         position: relative;
         z-index: 1;
     }
 
-    .cv a:after {
+    .download_btn a:after {
         position: absolute;
         content: "";
         top: 0;
         left: 0;
         width: 0;
         height: 100%;
-        background: #212529;
+        background: #027DFD;
         transition: all .35s;
     }
 
-    .cv a:hover {
+    .download_btn a:hover {
         color: #F8F9FA;
     }
 
-    .cv a:hover:after {
+    .download_btn a:hover:after {
         width: 100%;
     }
 
@@ -299,11 +297,6 @@
         top: 20%;
     }
 
-    .flip-card-content>p {
-        margin: 10%;
-        text-align: justify;
-    }
-
     .experience_btn {
         background-color: #343A40;
         font-weight: bold;
@@ -345,6 +338,14 @@
         text-align: center;
     }
 
+    .experience_resume {
+        display: flex;
+    }
+
+    .experience_text {
+        margin: 10vh;
+    }
+
     /*----- MATEX -----*/
 
     .matex_logos {
@@ -356,12 +357,9 @@
         width: 30%;
     }
 
-    .container {
-        text-align: center;
-    }
-
     .roll_up_img {
         width: 30%;
+        margin: 10vh;
     }
 
     .depliants {
@@ -422,22 +420,6 @@
         filter: drop-shadow(30px 10px 4px #212529);
     }
 
-    /*----- ZOOMER SUR LES IMAGES -----*/
-
-    input[type=checkbox] {
-        display: none;
-    }
-
-    .container img {
-        transition: transform 0.25s ease;
-        cursor: zoom-in;
-    }
-
-    input[type=checkbox]:checked~label>img {
-        transform: scale(3);
-        cursor: zoom-out;
-    }
-
     /*----- CONTACT -----*/
 
     .contact {
@@ -481,7 +463,7 @@
         width: 100%;
         left: 0;
         bottom: 0;
-        background-color: #212529;
+        background-color: #0553B1;
         color: #F8F9FA;
         font-size: 1em;
         text-align: center;
