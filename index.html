@@ -17,7 +17,6 @@
     <nav>
         <a href="#">Accueil</a>
         <a href="#presentation">Présentation</a>
-        <a href="#cv">Mon CV</a>
         <a href="#competences">Compétences</a>
         <a href="#experiences">Expériences et Projets</a>
         <a href="#contact">Contact</a>
@@ -35,7 +34,6 @@
         <div class="ulMobile">
             <a href="#">Accueil</a>
             <a href="#presentation">Présentation</a>
-            <a href="#cv">Mon CV</a>
             <a href="#competences">Compétences</a>
             <a href="#experiences">Expériences et Projets</a>
             <a href="#contact">Contact</a>
@@ -54,7 +52,8 @@
         <h1>&#60; Présentation /&#62; </h1>
         <div class="presentation_content">
             <img class="avatar" src="annexes/avatar.png" draggable="false">
-            <p>
+            <div>
+               <p class="presentation_txt">
                 Hi!<br>
                 My name is Corentin Rio and I am 20 years old. I’m currently
                 studying in a 2-year degree in multimedia and internet jobs.
@@ -69,17 +68,15 @@
                 work.<br>
                 I hope you’ll enjoy your visit, don’t hesitate to contact me if
                 you need further information.
-            </p>
+            </p> 
+            <div id="cv" class="cv">
+                <a class="download_btn" href="annexes/cv.pdf" target="_blank"><span>Consulter mon CV</span></a>
+            </div>
+            </div>
         </div>
     </div>
 
-    <div id="cv" class="cv">
-        <h1>&#60; Mon CV /&#62; </h1>
-        <div class="cv_content">
-            <img class="cv_preview" src="annexes/cv.jpg" draggable="false">
-            <a class="download_btn" href="annexes/cv.pdf" target="_blank"><span>Télécharger le CV</span></a>
-        </div>
-    </div>
+    
 
     <div id="competences" class="competences">
         <h1>&#60; Compétences /&#62; </h1>
@@ -353,17 +350,12 @@
     <div id="contact" class="contact">
         <h1>&#60; Contact /&#62; </h1>
         <p>Si besoin, vous pouvez me contacter :</p>
-
-        <div class="contact_detail">
-            <img src="annexes/email.png" draggable="false">
-            <a href="mailto:corentin.rio41@gmail.com">corentin.rio41@gmail.com</a>
+        
+        <div class="contacts">
+            <a href="mailto:corentin.rio41@gmail.com"><img class="contact_icon" src="annexes/email.png" draggable="false"></a>
+            <a href="https://www.linkedin.com/in/corentin-rio-a7603b227/"><img class="contact_icon" src="annexes/linkedin.png" draggable="false"></a>
         </div>
-
-        <div class="contact_detail">
-            <img src="annexes/linkedin.png" draggable="false">
-            <a href="https://www.linkedin.com/in/corentin-rio-a7603b227/">Corentin Rio</a>
-        </div>
-
+        
     </div>
 
     <footer><span class="year"></span> &copy; Corentin Rio - Tous droits réservés</footer>
