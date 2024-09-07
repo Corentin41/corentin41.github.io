@@ -9,6 +9,18 @@
         background-color: #DEE2E6;
     }
 
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
     /*----- BARRE DE NAVIGATION -----*/
 
     nav {
@@ -154,7 +166,6 @@
 
     .presentation>h1 {
         margin: 0;
-        font-size: 5em;
         color: #212529;
         padding-left: 5%;
         padding-top: 15vh;
@@ -175,7 +186,6 @@
     }
 
     .presentation_content>p {
-        font-size: 2em;
         color: #212529;
         padding-left: 5%;
         padding-right: 5%;
@@ -245,7 +255,6 @@
 
     .competences>h1 {
         margin: 0;
-        font-size: 5em;
         color: #212529;
         padding-left: 5%;
         padding-top: 15vh;
@@ -277,7 +286,6 @@
 
     .experiences>h1 {
         margin: 0;
-        font-size: 5em;
         color: #212529;
         padding-left: 5%;
         padding-top: 15vh;
@@ -379,19 +387,13 @@
         color: #212529;
     }
 
-    .experience_content>h1 {
-        font-size: 5em;
-    }
-
     .experience_content>h2 {
-        font-size: 2.5em;
         color: #212529;
         text-align: center;
         margin: 5%;
     }
 
     .experience_content>p {
-        font-size: 2em;
         text-align: justify;
     }
 
@@ -471,6 +473,54 @@
         filter: drop-shadow(30px 10px 4px #212529);
     }
 
+    /*----- Projets Mobiles ----- */
+
+    .smartphone {
+        position: relative;
+        width: 300px;
+        height: 550px;
+        margin: 50px;
+        border: 5px black solid;
+        border-top-width: 60px;
+        border-bottom-width: 60px;
+        border-radius: 36px;
+      }
+      
+      /* The horizontal line on the top of the device */
+      .smartphone:before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 5px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #333;
+        border-radius: 10px;
+      }
+      
+      /* The circle on the bottom of the device */
+      .smartphone:after {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 50%;
+        bottom: -65px;
+        transform: translate(-50%, -50%);
+        background: #333;
+        border-radius: 50%;
+      }
+      
+      /* The screen (or content) of the device */
+      .smartphone .content {
+        width: 300px;
+        height: 550px;
+        background: black;
+      }
+
     /*----- CONTACT -----*/
 
     .contact {
@@ -480,7 +530,6 @@
 
     .contact>h1 {
         margin: 0;
-        font-size: 5em;
         color: #212529;
         padding-left: 5%;
         padding-top: 6%;
@@ -488,7 +537,6 @@
 
     .contact>p {
         padding-left: 5%;
-        font-size: 2em;
         color: #212529;
     }
 
