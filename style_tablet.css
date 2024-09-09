@@ -300,24 +300,52 @@
         width: 30%;
     }
 
-    /*----- EXPERIENCES -----*/
+     /*----- EXPERIENCES & PROJETS -----*/
 
-    .experiences>h1 {
+     .projects>h1 {
         margin: 0;
         color: #212529;
         padding-left: 5%;
-        padding-top: 15vh;
+        padding-top: 6%;
+    }
+
+    .experience_img>img {
+        width: 30%;
+        border-radius: 50%;
     }
 
     .experiences_content {
         margin-top: 1%;
     }
 
-    .projets {
-        display: flex;
-        /* margin-left: 25%; */
-        /* margin-right: 25%; */
-        justify-content: space-around;
+    .project {
+        flex: 1 0 21%;
+        text-align: center;
+        align-content: center;
+        margin: 1%;
+        width: 200px;
+        height: 300px;
+        border-radius: 2%;
+        background-color: whitesmoke;
+    }
+
+    .project:hover {
+        cursor: pointer;
+        box-shadow: 
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .project>a {
+        text-decoration: none;
+        color: #212529;
+    }
+
+    .project>img {
+        width: 30%;
     }
 
     /*----- EXPERIENCES FLIP CARD -----*/
