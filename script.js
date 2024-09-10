@@ -21,6 +21,18 @@ btnBurger.addEventListener("click", function () {
     }
 })
 
+// Click sur un élément du menu le fait disparaître
+let menu = document.querySelectorAll(".menu");
+
+menu.forEach(item => {
+    item.addEventListener("click", () => {
+        navMobile.style.width = "0vw";
+        ulMobile.style.display = "none";
+        btnBurger.classList.remove("menuBurgerOpen");
+        restart = false;
+    });
+});
+
 /*----- SLIDER CAROUSSEL -----*/
 
 const wrapper = document.querySelector(".slider");
