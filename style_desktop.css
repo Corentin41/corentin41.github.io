@@ -39,7 +39,6 @@
         font-weight: bold;
         color: #F8F9FA;
         width: 12em;
-        height: 1px;
         display: inline-block;
     }
 
@@ -241,7 +240,7 @@
         width: 30%;
     }
 
-    /*----- EXPERIENCES & PROJETS -----*/
+    /*----- MES PROJETS -----*/
 
     .projects>h1 {
         margin: 0;
@@ -250,13 +249,9 @@
         padding-top: 6%;
     }
 
-    .experience_img>img {
+    .project_img>img {
         width: 30%;
         border-radius: 50%;
-    }
-
-    .experiences_content {
-        margin-top: 1%;
     }
 
     .project {
@@ -289,188 +284,42 @@
         width: 30%;
     }
 
-    /*----- EXPERIENCES FLIP CARD -----*/
-
-    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-    .flip-card {
-        margin: 2%;
-        background-color: transparent;
-        width: 300px;
-        height: 350px;
-        perspective: 1000px;
-        /* Remove this if you don't want the 3D effect */
-    }
-
-    /* This container is needed to position the front and back side */
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-    }
-
-    /* Do an horizontal flip when you move the mouse over the flip box container */
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    /* Position the front and back side */
-    .flip-card-front,
-    .flip-card-back {
-        border: solid 2px #212529;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        /* Safari */
-        backface-visibility: hidden;
-    }
-
-    /* Style the front side (fallback if image is missing) */
-    .flip-card-front {
-        background-color: #6C757D;
-        color: #F8F9FA;
-    }
-
-    /* Style the back side */
-    .flip-card-back {
-        background-color: #F8F9FA;
-        color: #212529;
-        transform: rotateY(180deg);
-    }
-
-    /*----- EXPERIENCES CONTENT -----*/
-
-    .flip-card-front>h2 {
-        position: relative;
-        top: 20%;
-    }
-
-    .flip-card-front>h3 {
-        position: relative;
-        top: 20%;
-    }
-
-    .experience_btn {
-        background-color: #343A40;
-        font-weight: bold;
-        color: #F8F9FA;
-        width: 50%;
-        height: 5vh;
-        border-radius: 8px;
-        position: absolute;
-        bottom: 10%;
-        left: 25%;
-    }
-
     /*----- PROJET CONTENT -----*/
 
-    .experience_content {
-        padding-top: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
+    .project_content {
+        padding: 5%;
         color: #212529;
     }
 
-    .experience_content>h2 {
+    .project_content>h2 {
         color: #212529;
         text-align: center;
         margin: 5%;
     }
 
-    .experience_content>p {
-        text-align: justify;
-    }
-
-    .experience_content>img {
-        text-align: center;
-    }
-
-    .experience_resume {
-        display: flex;
-    }
-
-    .experience_text {
-        margin: 10vh;
-    }
-
-    /*----- MATEX -----*/
-
-    .matex_logos {
+    .project_content_container {
         display: flex;
         align-items: center;
     }
 
-    .matex_logos>img {
-        width: 30%;
-    }
-
-    .roll_up_img {
-        width: 30%;
-        margin: 10vh;
-    }
-
-    .depliants {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 2.5vh;
-    }
-
-    /*----- APPLI MOBILE -----*/
-
-    .maquettes {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5%;
-    }
-
-    .maquette {
-        border: solid 3px #212529;
-        width: 15%;
-    }
-
-    /*----- INTEGRATION WEB -----*/
-
-    .integration_web {
-        text-align: center;
-        margin-bottom: 2.5vh;
-    }
-
-    .integration_web>img {
+    .project_content_img {
         width: 50%;
-        box-shadow: 30px 10px 4px #212529;
     }
 
-    /*----- PROJET TUTEURE -----*/
-
-    .projet_tuteure {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 2.5vh;
+    .project_content_img>img {
+        width: 80%;
     }
 
-    .projet_tuteure>img {
-        width: 30%;
-        box-shadow: 30px 10px 4px #212529;
+    .project_content_text {
+        width: 50%;
+        margin: 10vh;
+        text-align: justify;
     }
 
-    /*----- AFFICHES -----*/
-
-    .affiche {
-        text-align: center;
-        margin-bottom: 2.5vh;
+    .smartphone_container {
+        width: 20%;
+        margin-left: 10%;
     }
-
-    .affiche>img {
-        width: 25%;
-        filter: drop-shadow(30px 10px 4px #212529);
-    }
-
-    /*----- Projets Mobiles ----- */
 
     .smartphone {
         position: relative;
