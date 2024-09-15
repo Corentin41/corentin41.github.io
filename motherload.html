@@ -19,7 +19,6 @@
         <a href="index.html#presentation">Présentation</a>
         <a href="index.html#competences">Compétences</a>
         <a href="index.html#projects">Mes Projets</a>
-        <a href="index.html#contact">Contact</a>
     </nav>
 
     <div class="menuBurgerBackground">
@@ -36,12 +35,11 @@
             <a class="menu" href="index.html#presentation">Présentation</a>
             <a class="menu" href="index.html#competences">Compétences</a>
             <a class="menu" href="index.html#projects">Mes Projets</a>
-            <a class="menu" href="index.html#contact">Contact</a>
         </div>
     </nav>
 
     <div class="project_content">
-        <h1>&#60; Application Mobile : Motherload /&#62; </h1>
+        <h1>&#60; Motherload /&#62; </h1>
         <div class="project_content_container">
             <div class="smartphone_container">
                 <div class="smartphone">
@@ -52,15 +50,48 @@
                     </div>
                 </div>
             </div>
-            <div class="project_content_text">
-                <p>J'ai réalisé ce projet au cours de ma 1re année de Master Informatique dans le cadre d'un cours de Programmation Mobile Android.</p>
-                <p>Communiquer avec des web services php, bdd, j'ai fait des ajouts sur mon temps perso après le projet...</p>
+            <div class="project_content_smartphone_text">
+                <h2>Contexte</h2>
+                <p>
+                    J'ai réalisé ce projet au cours de ma 1<sup>re</sup> année de Master Informatique dans le cadre d'un cours de développement natif Android.
+                    <br>
+                    Cette application est un mini-jeu qui nécessite la géolocalisation du téléphone et un accès internet.
+                    Si l'utilisateur se trouve dans le campus de l'Université d'Orléans, il peut creuser pour espérer trouver des objets.
+                    Avec ces objets il peut améliorer la qualité de ses outils pour creuser encore plus profond.
+                    Lorsqu'il a amassé assez d'objets rares, il peut les mettre en vente dans le magasin afin que les autres joueurs puisse les acheter.
+                    Il est aussi possible d'observer les autres joueurs à l'aide d'une carte qui affiche la position des joueurs en temps réel.
+                </p>
+
+                <h2>Objectifs</h2>
+                <p>
+                    Nous avions à notre disposition un serveur avec différents web services écrits en PHP par notre professeur.
+                    <br>
+                    L'objectif du projet était d'envoyer les données aux différents web services (ex : coordonnées GPS pour creuser) et attendre la réponse du serveur (objet trouvé ou non trouvé).
+                    Nous devions ensuite développer une application agréable à utiliser pour jouer au jeu.
+                    <br>
+                    Utilisation du langage de programmation pour Android : Kotlin.
+                </p>
+
+                <h2>Bilan</h2>
+                <p>
+                    Après le projet j'ai eu l'idée d'ajouter quelques fonctionnalités que je n'avais pas eu le temps de développer au cours du projet.
+                    Le professeur m'a donc partagé le code de son serveur et des différents web services pour que je puisse l'héberger moi-même et ainsi continuer de faire fonctionner le jeu.
+                    J'en ai aussi profité pour corriger quelques erreurs et ajouter de nouvelles fonctionnalités comme l'ajout d'un avatar pour mieux identifier les joueurs sur la carte.
+                </p>
             </div>
         </div>
     </div>
 
-</body>
+    <footer>
+        <div class="copyright">
+            CORENTIN RIO &copy; <span class="year"></span>
+        </div>
+        <div class="contacts">
+            <a class="contact_icon" href="mailto:corentin.rio41@gmail.com"><img src="annexes/email.png" draggable="false"></a>
+            <a class="contact_icon" href="https://www.linkedin.com/in/corentin-rio-a7603b227/" target="_blank"><img src="annexes/linkedin.png" draggable="false"></a>
+        </div>
+    </footer>
 
-<footer><span class="year"></span> &copy; Corentin Rio - Tous droits réservés</footer>
+</body>
 
 </html>
