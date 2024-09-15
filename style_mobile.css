@@ -10,15 +10,15 @@
     }
 
     h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
         font-size: 2em;
     }
 
-    p {
+    h2 {
         font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
     }
 
     /*----- BARRE DE NAVIGATION -----*/
@@ -367,7 +367,9 @@
     }
 
     .smartphone_container {
-        width: 20%;
+        width: 100%;
+        justify-content: center;
+        display: flex;
     }
 
     .project_content_smartphone_text {
