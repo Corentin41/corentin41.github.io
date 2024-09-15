@@ -433,8 +433,8 @@
         font-size: 1em;
         text-align: center;
         margin-top: 5vh;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
 
     .copyright {
@@ -449,11 +449,11 @@
     }
 
     .contact_icon {
-        width: 5vw;
+        width: 10vw;
     }
 
     .contact_icon>img {
-        width: 5vw;
+        width: 10vw;
     }
 
 }

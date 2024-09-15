@@ -304,7 +304,7 @@
 
     .project_content_text {
         width: 50%;
-        margin: 10vh;
+        margin-left: 10%;
         text-align: justify;
     }
 
@@ -314,7 +314,7 @@
 
     .project_content_smartphone_text {
         width: 80%;
-        margin: 10vh;
+        margin-left: 25%;
         text-align: justify;
     }
 
