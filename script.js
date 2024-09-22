@@ -33,6 +33,39 @@ menu.forEach(item => {
     });
 });
 
+
+
+/*----- SLIDE ANIMATIONS -----*/
+
+const startAnimationRight = (entries, observerRight) => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("slide-in-from-right", entry.isIntersecting);
+    });
+  };
+
+const startAnimationLeft = (entries, observerLeft) => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("slide-in-from-left", entry.isIntersecting);
+    });
+  };
+  
+  const observerRight = new IntersectionObserver(startAnimationRight);
+  const observerLeft = new IntersectionObserver(startAnimationLeft);
+  const options = { root: null, rootMargin: '0px', threshold: 1 }; 
+  
+  const elementsRight = document.querySelectorAll('.slideElementFromRight');
+  const elementsLeft = document.querySelectorAll('.slideElementFromLeft');
+
+  elementsRight.forEach(elRight => {
+    observerRight.observe(elRight, options);
+  });
+
+  elementsLeft.forEach(elLeft => {
+    observerLeft.observe(elLeft, options);
+  });
+
+
+
 /*----- DATE FOOTER -----*/
 
 let year = document.querySelector(".year");

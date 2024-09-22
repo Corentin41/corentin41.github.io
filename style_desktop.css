@@ -30,6 +30,34 @@
         font-family: Arial, Helvetica, sans-serif; 
     }
 
+    /*----- SLIDE ANIMATIONS -----*/
+
+    .slide-in-from-left {
+        animation: 1.5s ease-out 0s 1 slideInFromLeft forwards;
+    }
+      
+    @keyframes slideInFromLeft {
+        0% {
+          transform: translateX(-50%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+    }
+
+    .slide-in-from-right {
+        animation: 1.5s ease-out 0s 1 slideInFromRight forwards;
+    }
+      
+    @keyframes slideInFromRight {
+        0% {
+          transform: translateX(50%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+    }
+
     /*----- BARRE DE NAVIGATION -----*/
 
     nav {
@@ -131,7 +159,7 @@
         margin-left: 5%;
         width: 500px;
         height: 500px;
-        border-radius: 50%;
+        border-radius: 5%;
         border: 2px solid #212529;
         background-color: #E9ECEF;
     }
