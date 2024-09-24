@@ -65,6 +65,42 @@ elementsLeft.forEach(elLeft => {
 });
 
 
+/*----- SLIDE ANIMATIONS -----*/
+
+let select_languages = document.querySelector('#select_languages');
+let select_tools = document.querySelector('#select_tools');
+let skills_languages = document.querySelector('#skills_languages');
+let skills_tools = document.querySelector('#skills_tools');
+
+// Par défaut : afficher les langages et cacher les outils
+select_languages.classList.toggle("skills_toggle_select");
+skills_tools.classList.toggle("skills_container_display_none");
+let select = 0;
+
+select_languages.addEventListener("click", () => {
+  if (select == 1) {
+    toggle();
+    select = 0;
+  }
+});
+
+select_tools.addEventListener("click", () => {
+  if (select == 0) {
+    toggle();
+    select = 1;
+  }
+});
+
+function toggle() {
+  // toggle l'affichage du select dans le menu entre langages/outils
+  select_languages.classList.toggle("skills_toggle_select");
+  select_tools.classList.toggle("skills_toggle_select");
+  // toggle l'affichage des icones dans la page entre langages/outils
+  skills_languages.classList.toggle("skills_container_display_none");
+  skills_tools.classList.toggle("skills_container_display_none");
+  
+  
+}
 
 /*----- DATE FOOTER -----*/
 
