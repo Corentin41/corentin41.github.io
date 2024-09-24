@@ -75,11 +75,15 @@ let skills_tools = document.querySelector('#skills_tools');
 // Par défaut : afficher les langages et cacher les outils
 select_languages.classList.toggle("skills_toggle_select");
 skills_tools.classList.toggle("skills_container_display_none");
+select_languages.style.color = "black";
 let select = 0;
 
 select_languages.addEventListener("click", () => {
   if (select == 1) {
     toggle();
+    // Changer la couleur du texte
+    select_languages.style.color = "black";
+    select_tools.style.color = "white";
     select = 0;
   }
 });
@@ -87,6 +91,8 @@ select_languages.addEventListener("click", () => {
 select_tools.addEventListener("click", () => {
   if (select == 0) {
     toggle();
+    select_tools.style.color = "black";
+    select_languages.style.color = "white";
     select = 1;
   }
 });
