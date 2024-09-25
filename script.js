@@ -62,6 +62,21 @@ elementsLeft.forEach(elLeft => {
     observerLeft.observe(elLeft, options);
 });
 
+/*----- POP ANIMATION -----*/
+
+const startAnimationPop = (entries, observerPop) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("pop_animation", entry.isIntersecting);
+  });
+};
+
+const observerPop = new IntersectionObserver(startAnimationPop);
+const elementsPop = document.querySelectorAll('.popElement');
+
+elementsPop.forEach(elPop => {
+  observerPop.observe(elPop, options);
+});
+
 /*----- SKILLS SELECT -----*/
 
 let select_languages = document.querySelector('#select_languages');
