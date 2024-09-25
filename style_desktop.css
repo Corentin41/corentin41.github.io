@@ -217,7 +217,7 @@
     }
 
     .skills_toggle {
-        width: 30%;
+        width: 50%;
         display: flex;
         background-color: #0553B1;
         border-radius: 100px;
@@ -245,7 +245,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 1%;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
     }
 
     .skills_container_display_none {
@@ -270,6 +271,47 @@
 
     .skill_box:hover {
         animation: pop 0.3s linear 1;
+    }
+
+    .skill_box_tooltip {
+        position: relative;
+        display: inline-block;
+    }
+      
+    .skill_box_tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        bottom: 120%;
+        left: 50%;
+        margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+        background-color: #0553B1;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+      
+    .skill_box_tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    .skill_box_tooltip:hover .tooltiptext {
+        visibility: visible;
+        animation: 1.0s ease-out 0s 1 slideInFromTop forwards;
+    }
+      
+    @keyframes slideInFromTop {
+        0% {
+          transform: translateY(-2vh);
+          opacity: 50%;
+        }
+        100% {
+          transform: translateY(0vh);
+          opacity: 100%;
+        }
     }
 
     @keyframes pop {
