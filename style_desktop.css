@@ -270,7 +270,7 @@
     }
 
     .skill_box:hover {
-        animation: pop 0.3s linear 1;
+        animation: skill_pop 0.3s linear 1;
     }
 
     .skill_box_tooltip {
@@ -314,7 +314,7 @@
         }
     }
 
-    @keyframes pop {
+    @keyframes skill_pop {
         50%  {transform: scale(1.2);}
     }
 
@@ -364,6 +364,64 @@
         width: 30%;
     }*/
 
+    /*----- MES EXPERIENCES -----*/
+
+    .experiences_container {
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .line {
+        position: absolute;
+        background-color: black;
+        width: 5px;
+        height: 120vh;
+    }
+
+    .circle {
+        position: absolute;
+        background-color: black;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .experience_box {
+        width: 700px;
+        height: 30vh;
+        padding: 2%;
+        margin: 2%;
+        background-color: whitesmoke;
+        box-shadow: 0 3px 5px #0000002e;
+        border-radius: 10px;
+    }
+
+    .exp1 {
+        margin-top: 20vh;
+    }
+
+    .exp2 {
+        margin-top: 80vh;
+    }
+
+    .experience_title {
+        width: 100%;
+        margin-bottom: 2%;
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    .experience_subtitle {
+        width: 100%;
+        margin-bottom: 1%;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
     /*----- MES PROJETS -----*/
 
     .projects_list {
@@ -378,7 +436,7 @@
         justify-content: center;
     }
 
-    @keyframes pop {
+    @keyframes project_pop {
         0%  {
             transform: scale(0.5);
             opacity: 0%;
@@ -390,7 +448,7 @@
     }
 
     .pop_animation {
-        animation: pop 0.5s linear 1;
+        animation: project_pop 0.5s linear 1;
     }
 
     .project_box {
