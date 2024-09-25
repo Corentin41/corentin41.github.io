@@ -35,16 +35,8 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    p {
-        font-size: 1.5em;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    a {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    span {
+    p,a,span {
+        font-size: 1em;
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -204,6 +196,7 @@
         background-color: #0553B1;;
         color: #DEE2E6;
         border: 1px solid #0553B1;
+        user-select: none;
     }
 
     .download_btn>a:hover {
@@ -273,7 +266,6 @@
 
     .skill_box>img {
         width: 50px;
-        height: 50px;
     }
 
     .skill_box:hover {
@@ -345,7 +337,7 @@
     }
 
     .project_box {
-        width: 80%;
+        width: 60%;
         padding: 2%;
         margin: 2%;
         background-color: whitesmoke;
@@ -391,12 +383,10 @@
     }
 
     .project_label>span {
-        width: 50%;
-        background-color: #0553B1;
+        background-color: #DEE2E6;
         border-radius: 10px;
-        color: white;
-        padding: 1%;
-        font-weight: bold;
+        color: #212529;
+        padding: 1% 2% 1% 2%;
     }
 
     .project_desc {
@@ -423,6 +413,7 @@
         color: #DEE2E6;
         border: 1px solid #0553B1;
         font-weight: bold;
+        user-select: none;
     }
 
     .project_more>a:hover {
@@ -431,6 +422,21 @@
         background-color: whitesmoke;
         border: 1px solid #0553B1;
         color: #0553B1;
+    }
+
+    .hidden_projects_btn_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hidden_projects_btn_container>a {
+        width: 50%;
+    }
+
+    .hidden_projects_btn {
+        cursor: pointer;
+        user-select: none;
     }
 
     /*.project_img>img {

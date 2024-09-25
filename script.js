@@ -33,8 +33,6 @@ menu.forEach(item => {
     });
 });
 
-
-
 /*----- SLIDE ANIMATIONS -----*/
 
 const startAnimationRight = (entries, observerRight) => {
@@ -64,8 +62,7 @@ elementsLeft.forEach(elLeft => {
     observerLeft.observe(elLeft, options);
 });
 
-
-/*----- SLIDE ANIMATIONS -----*/
+/*----- SKILLS SELECT -----*/
 
 let select_languages = document.querySelector('#select_languages');
 let select_tools = document.querySelector('#select_tools');
@@ -104,8 +101,50 @@ function toggle() {
   // toggle l'affichage des icones dans la page entre langages/outils
   skills_languages.classList.toggle("skills_container_display_none");
   skills_tools.classList.toggle("skills_container_display_none");
-  
-  
+}
+
+/*----- HIDDEN PROJECT -----*/
+
+let hidden_projects = document.querySelectorAll("#hidden_project");
+let view_more_project = document.querySelector(".view_more_project");
+let view_less_project = document.querySelector(".view_less_project");
+
+// afficher le bouton voir plus de projets et cacher l'autre
+display = 1;
+display_btn();
+
+// retirer de l'affichage les projets
+hidden_projects.forEach(project => {
+  project.style.display = "none";
+});
+
+// voir plus de projets
+view_more_project.addEventListener("click", () => {
+  display = 0;
+  display_btn();
+  hidden_projects.forEach(project => {
+    project.style.display = "flex";
+  })
+});
+
+// voir moins de projets
+view_less_project.addEventListener("click", () => {
+  display = 1;
+  display_btn();
+  hidden_projects.forEach(project => {
+    project.style.display = "none";
+  })
+})
+
+// boutons pour afficher "voir plus / voir moins"
+function display_btn() {
+  if (display == 0) {
+    view_more_project.style.display = "none";
+    view_less_project.style.display = "block";
+  } else {
+    view_more_project.style.display = "block";
+    view_less_project.style.display = "none";
+  }
 }
 
 /*----- DATE FOOTER -----*/
