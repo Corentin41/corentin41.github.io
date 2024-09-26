@@ -288,7 +288,7 @@
 
     .skills_toggle_select {
         background-color: #F8F9FA;
-        animation: pop 0.3s linear 1;
+        animation: skill_pop 0.3s linear 1;
     }
 
     .skills_container {
