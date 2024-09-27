@@ -245,7 +245,7 @@
 
     .download_btn>a {
         width: 100%;
-        padding: 2vh;
+        padding: 5%;
         border-radius: 100px;
         text-align: center;
         transition: 0.5s;
@@ -484,6 +484,9 @@
 
     .project_label {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
     }
 
     .project_label>span {
@@ -491,6 +494,8 @@
         border-radius: 10px;
         color: #212529;
         padding: 1% 2% 1% 2%;
+        box-shadow: 0 3px 5px #0000002e;
+        font-weight: bold;
     }
 
     .project_desc {
@@ -506,10 +511,7 @@
     }
 
     .project_more>a {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding: 3% 15% 3% 15%;
         border-radius: 100px;
         text-align: center;
         transition: 0.5s;
