@@ -624,26 +624,36 @@
         text-align: center;
         margin-top: 5vh;
         padding-top: 2%;
-        padding-bottom: 2%;
     }
 
     .copyright {
-        padding-bottom: 2%;
+        padding: 3vh;
     }
 
     .contacts {
         display: flex;
-        margin-left: 30%;
-        margin-right: 30%;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 3em;
     }
 
-    .contact_icon {
-        width: 10vw;
+    .contact_icon svg {
+        height: 3vh;
+        color: white;
     }
 
-    .contact_icon>img {
-        width: 10vw;
+    .mail svg:hover {
+        /*color: black;*/
+        color: rgb(216, 99, 42);
+    }
+
+    .linkedin svg:hover {
+        /*color: #0077B5;*/
+        color: rgb(216, 99, 42);
+    }
+
+    .github svg:hover {
+        /*color: #24292e;*/
+        color: rgb(216, 99, 42);
     }
 
 }
