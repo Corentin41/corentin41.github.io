@@ -62,6 +62,44 @@ elementsLeft.forEach(elLeft => {
     observerLeft.observe(elLeft, options);
 });
 
+/*----- SKILLS POP ANIMATION -----*/
+
+const startAnimationSkillsPop = (entries, observerSkillsPop) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("skill_pop_animation", entry.isIntersecting);
+  });
+};
+
+const observerSkillsPop = new IntersectionObserver(startAnimationSkillsPop);
+const elementsSkillsPop = document.querySelectorAll('.skill_pop');
+
+elementsSkillsPop.forEach(elSkillsPop => {
+  observerSkillsPop.observe(elSkillsPop, options);
+});
+
+// add animation delay for each skill_box
+var skill_boxes = document.querySelectorAll('.skill_box');
+
+skill_boxes.forEach(box => {
+  // increase the delay
+  increaseDelay();
+  // add the new delay to the "box" element
+  let pop_delay = getComputedStyle(document.documentElement).getPropertyValue('--pop-delay');
+  box.style.animationDelay = pop_delay;
+});
+
+// increase delay between each skill box pop
+function increaseDelay(pop_delay) {
+  // get the pop delay and transform from string to int
+  pop_delay = getComputedStyle(document.documentElement).getPropertyValue('--pop-delay');
+  let delay = pop_delay.replace("s","");
+  // increase delay with 0.1s for each skill box
+  delay = parseFloat(delay) + parseFloat('0.1');
+  // set the new var in the css
+  const root_theme = document.querySelector(':root');
+  root_theme.style.setProperty('--pop-delay', delay+"s");
+}
+
 /*----- PROJECT POP ANIMATION -----*/
 
 const startAnimationPop = (entries, observerPop) => {

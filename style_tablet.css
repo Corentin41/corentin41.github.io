@@ -300,6 +300,14 @@
         animation: skill_pop 0.3s linear 1;
     }
 
+    :root {
+        --pop-delay: 0.0s;
+    }
+
+    .skill_pop_animation {
+        animation: skill_pop 0.3s linear 1;
+    }
+
     .skills_container {
         display: flex;
         flex-wrap: wrap;
@@ -326,10 +334,6 @@
 
     .skill_box>img {
         width: 50px;
-    }
-
-    .skill_box:hover {
-        animation: skill_pop 0.3s linear 1;
     }
 
     .skill_box_tooltip {
