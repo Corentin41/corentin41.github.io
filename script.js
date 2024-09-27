@@ -78,15 +78,35 @@ elementsSkillsPop.forEach(elSkillsPop => {
 });
 
 // add animation delay for each skill_box
-var skill_boxes = document.querySelectorAll('.skill_box');
+var skills = document.querySelectorAll('.skills');
+var tools = document.querySelectorAll('.tools');
 
-skill_boxes.forEach(box => {
+// animation delay for skill/language box
+skills.forEach(box => {
   // increase the delay
   increaseDelay();
   // add the new delay to the "box" element
   let pop_delay = getComputedStyle(document.documentElement).getPropertyValue('--pop-delay');
   box.style.animationDelay = pop_delay;
 });
+
+// reset the delay var to prevent a delay stack between skills and tools
+resetDelay();
+
+// animation delay for tool box
+tools.forEach(box => {
+  // increase the delay
+  increaseDelay();
+  // add the new delay to the "box" element
+  let pop_delay = getComputedStyle(document.documentElement).getPropertyValue('--pop-delay');
+  box.style.animationDelay = pop_delay;
+});
+
+// reset the delay var in :root element in css file
+function resetDelay() {
+  const root_theme = document.querySelector(':root');
+  root_theme.style.setProperty('--pop-delay', "0.0s");
+}
 
 // increase delay between each skill box pop
 function increaseDelay(pop_delay) {
