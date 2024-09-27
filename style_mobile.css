@@ -423,17 +423,25 @@
     }
 
     .experience_box {
+        align-content: center;
         height: 40vh;
-        margin: 2%;
+        margin: 5%;
         background-color: whitesmoke;
         box-shadow: 0 3px 5px #0000002e;
         border-radius: 10px;
     }
 
+    .experience_header {
+        width: 100%;
+    }
+
+    .experience_header img {
+        display: none;
+    }
+
     .experience_title {
         width: 100%;
         text-align: center;
-        margin-bottom: 2%;
         font-weight: bold;
         font-size: 2em;
     }
@@ -441,9 +449,13 @@
     .experience_subtitle {
         width: 100%;
         text-align: center;
-        margin-bottom: 1%;
         font-weight: bold;
         font-size: 1.5em;
+    }
+
+    .experience_desc {
+        margin: 10%;
+        text-align: justify;
     }
 
      /*----- MES PROJETS -----*/
@@ -532,11 +544,10 @@
     }
 
     .project_more>a {
-        width: 20%;
         padding-top: 1%;
         padding-bottom: 1%;
-        padding-left: 4%;
-        padding-right: 4%;
+        padding-left: 15%;
+        padding-right: 15%;
         border-radius: 100px;
         text-align: center;
         transition: 0.5s;

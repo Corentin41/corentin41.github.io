@@ -408,6 +408,16 @@
         margin-top: 80vh;
     }
 
+    .experience_header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .experience_header img {
+        height: 10vh;
+    }
+
     .experience_title {
         width: 100%;
         margin-bottom: 2%;
@@ -607,7 +617,7 @@
     }
 
     .project_content_img>img {
-        width: 100%;
+        width: 50%;
     }
 
     .project_content_text {
