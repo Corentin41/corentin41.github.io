@@ -62,7 +62,7 @@ elementsLeft.forEach(elLeft => {
     observerLeft.observe(elLeft, options);
 });
 
-/*----- POP ANIMATION -----*/
+/*----- PROJECT POP ANIMATION -----*/
 
 const startAnimationPop = (entries, observerPop) => {
   entries.forEach(entry => {

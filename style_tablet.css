@@ -13,7 +13,6 @@
 
     h1 {
         font-weight: bold;
-        text-transform: uppercase;
         margin: 0;
         color: #212529;
         padding-top: 15vh;
@@ -175,54 +174,64 @@
     /*----- HEADER -----*/
 
     header {
-        background-image: url('annexes/Wave.svg');
+        background-image: url('annexes/background.png');
         height: 100vh;
         background-repeat: no-repeat;
         background-position: left top;
         background-size: cover;
+        align-content: center;
     }
 
     .title {
         color: #212529;
         font-size: 2em;
         text-align: center;
-        padding-top: 40vh;
-    }
-
-    .title>h1 {
-        padding: 0;
-    }
-
-    .title>h2 {
-        font-weight: lighter;
     }
 
     .title>a {
         text-decoration: none;
-        font-size: 2em;
         color: #212529;
+    }
+
+    .title svg {
+        height: 8vh;
+    }
+
+    .title svg:hover {
+        color: #0553B1;
     }
 
     /*----- PRESENTATION -----*/
 
+    .presentation {
+        padding-bottom: 20vh;
+        background-color: rgb(255 255 255);
+    }
+
     .presentation_content {
-        padding-top: 5%;
         text-align: center;
     }
 
     .avatar {
-        margin-left: 5%;
         width: 500px;
         height: 500px;
         border-radius: 50%;
-        border: 2px solid #212529;
+        border: 5px solid #0553B1;
         background-color: #E9ECEF;
+        box-shadow: 
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .presentation_txt {
+        margin: 10%;
     }
 
     .presentation_txt>p {
         color: #212529;
-        padding-left: 5%;
-        padding-right: 5%;
         text-align: justify;
     }
 
@@ -243,7 +252,7 @@
         transition: 0.5s;
         text-decoration: none;
         text-transform: uppercase;
-        background-color: #0553B1;;
+        background-color: #0553B1;
         color: #DEE2E6;
         border: 1px solid #0553B1;
         user-select: none;
@@ -350,7 +359,7 @@
 
     .skill_box_tooltip:hover .tooltiptext {
         visibility: visible;
-        animation: 1.0s ease-out 0s 1 slideInFromTop forwards;
+        animation: 0.3s ease-out 0s 1 slideInFromTop forwards;
     }
       
     @keyframes slideInFromTop {
@@ -368,7 +377,11 @@
         50%  {transform: scale(1.2);}
     }
 
-    /*----- MES EXPERIENCES -----*/
+    /*----- EXPERIENCES -----*/
+
+    .experiences {
+        margin-bottom: 10vh;
+    }
 
     .experiences_container {
         width: 100%;
@@ -444,7 +457,7 @@
         text-align: justify;
     }
 
-     /*----- MES PROJETS -----*/
+     /*----- PROJETS -----*/
 
      .projects_list {
         width: 100%;
@@ -531,7 +544,7 @@
         transition: 0.5s;
         text-decoration: none;
         text-transform: uppercase;
-        background-color: #0553B1;;
+        background-color: #0553B1;
         color: #DEE2E6;
         border: 1px solid #0553B1;
         font-weight: bold;
