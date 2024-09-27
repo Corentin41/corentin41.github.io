@@ -318,52 +318,6 @@
         50%  {transform: scale(1.2);}
     }
 
-
-
-
-
-
-    /*.competences_content {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5%;
-    }
-    
-    .competence {
-        flex: 1 0 21%;
-        text-align: center;
-        align-content: center;
-        margin: 1%;
-        width: 200px;
-        height: 300px;
-        border-radius: 2%;
-        background-color: whitesmoke;
-        box-shadow: 0 3px 5px #0000002e;
-    }
-
-    .competence:hover {
-        box-shadow: 
-        rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px,
-        rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }
-
-    .competence>img {
-        width: 30%;
-    }
-
-    .skill_img {
-        align-items: center;
-        align-content: center;
-        height: 50%;
-    }
-
-    .skill_img>img {
-        width: 30%;
-    }*/
-
     /*----- MES EXPERIENCES -----*/
 
     .experiences_container {
@@ -469,15 +423,6 @@
         box-shadow: 0 3px 5px #0000002e;
         border-radius: 10px;
     }
-    
-    /*.project_box:hover {
-        box-shadow: 
-        rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px,
-        rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }*/
 
     .project_header {
         width: 100%;
@@ -563,38 +508,6 @@
         cursor: pointer;
         user-select: none;
     }
-
-    /*.project_img>img {
-        width: 30%;
-        border-radius: 50%;
-    }
-
-    .project {
-        text-decoration: none;
-        color: #212529;
-        flex: 1 0 21%;
-        text-align: center;
-        align-content: center;
-        margin: 1%;
-        width: 200px;
-        height: 300px;
-        border-radius: 2%;
-        background-color: whitesmoke;
-        box-shadow: 0 3px 5px #0000002e;
-    }
-
-    .project:hover {
-        box-shadow: 
-        rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px,
-        rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }
-
-    .project>img {
-        width: 30%;
-    }*/
 
     /*----- PROJET CONTENT -----*/
 
