@@ -205,8 +205,8 @@
     /*----- PRESENTATION -----*/
 
     .presentation {
-        padding-bottom: 20vh;
         background-color: rgb(255 255 255);
+        padding: 10% 5% 10% 5%;
     }
 
     .presentation_content {
@@ -240,7 +240,7 @@
     .download_btn {
         width: 100%;
         justify-content: center;
-        margin-top: 10vh;
+        margin-top: 10%;
         display: flex;
     }
 

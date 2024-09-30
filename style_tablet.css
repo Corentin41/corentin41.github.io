@@ -204,8 +204,8 @@
     /*----- PRESENTATION -----*/
 
     .presentation {
-        padding-bottom: 20vh;
         background-color: rgb(255 255 255);
+        padding: 2% 5% 2% 5%;
     }
 
     .presentation_content {

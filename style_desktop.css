@@ -154,15 +154,14 @@
     /*----- PRESENTATION -----*/
 
     .presentation {
-        padding-bottom: 20vh;
         background-color: rgb(255 255 255);
+        padding: 5% 10% 5% 10%;
     }
 
     .presentation_content {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 5%;
         gap: 3em;
     }
 
@@ -180,12 +179,12 @@
         rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
-    .presentation_txt_container {
+    /*.presentation_txt_container {
         width: 30%;
-    }
+    }*/
 
     .presentation_txt {
-        font-size: 1em;
+        font-size: 1.5em;
         color: #212529;
         text-align: justify;
     }   
