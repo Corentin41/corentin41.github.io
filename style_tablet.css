@@ -9,6 +9,7 @@
     body {
         margin: 0;
         background-color: #DEE2E6;
+        user-select: none;
     }
 
     h1 {
@@ -600,11 +601,11 @@
 
     .project_content_container {
         display: flex;
-        align-items: center;
+        gap: 5em;
     }
 
     .project_content_img {
-        width: 50%;
+        height: 100%;
     }
 
     .project_content_img>img {
@@ -612,18 +613,10 @@
     }
 
     .project_content_text {
-        width: 50%;
-        margin-left: 10%;
         text-align: justify;
     }
 
-    .smartphone_container {
-        width: 20%;
-    }
-
     .project_content_smartphone_text {
-        width: 80%;
-        margin-left: 40%;
         text-align: justify;
     }
 

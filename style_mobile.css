@@ -9,6 +9,7 @@
     body {
         margin: 0;
         background-color: #DEE2E6;
+        user-select: none;
     }
 
     h1 {
