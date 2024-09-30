@@ -33,74 +33,72 @@ menu.forEach(item => {
     });
 });
 
-/*----- SLIDE ANIMATIONS -----*/
+/*----- ANIMATIONS -----*/
 
-const startAnimationRight = (entries, observerRight) => {
+const options = { root: null, rootMargin: '0px', threshold: 1 };
+
+function startAnimation(animation_name) {
+  const startAnimation = (entries) => {
     entries.forEach(entry => {
-      entry.target.classList.toggle("slide-in-from-right", entry.isIntersecting);
+      entry.target.classList.toggle(animation_name, entry.isIntersecting);
     });
   };
+  return startAnimation;
+}
 
-const startAnimationLeft = (entries, observerLeft) => {
-    entries.forEach(entry => {
-      entry.target.classList.toggle("slide-in-from-left", entry.isIntersecting);
-    });
-  };
-  
-const observerRight = new IntersectionObserver(startAnimationRight);
-const observerLeft = new IntersectionObserver(startAnimationLeft);
-const options = { root: null, rootMargin: '0px', threshold: 1 }; 
-  
+// Slide from right animation call
 const elementsRight = document.querySelectorAll('.slideElementFromRight');
+elementsRight.forEach(element => {
+  new IntersectionObserver(startAnimation("slide-in-from-right")).observe(element, options);
+});
+
+// Slide from left animation call
 const elementsLeft = document.querySelectorAll('.slideElementFromLeft');
-
-elementsRight.forEach(elRight => {
-    observerRight.observe(elRight, options);
+elementsLeft.forEach(element => {
+  new IntersectionObserver(startAnimation("slide-in-from-left")).observe(element, options);
 });
 
-elementsLeft.forEach(elLeft => {
-    observerLeft.observe(elLeft, options);
+// Projects pop animation call
+const elementsPop = document.querySelectorAll('.popElement');
+elementsPop.forEach(elPop => {
+  new IntersectionObserver(startAnimation("pop_animation")).observe(elPop, options);
 });
 
-/*----- SKILLS POP ANIMATION -----*/
-
-const startAnimationSkillsPop = (entries, observerSkillsPop) => {
-  entries.forEach(entry => {
-    entry.target.classList.toggle("skill_pop_animation", entry.isIntersecting);
-  });
-};
-
-const observerSkillsPop = new IntersectionObserver(startAnimationSkillsPop);
+// Skills pop animation call
 const elementsSkillsPop = document.querySelectorAll('.skill_pop');
-
-elementsSkillsPop.forEach(elSkillsPop => {
-  observerSkillsPop.observe(elSkillsPop, options);
+popAnimationDelay();
+elementsSkillsPop.forEach(element => {
+  new IntersectionObserver(startAnimation("skill_pop_animation")).observe(element, options);
 });
+
+/*----- POP ANIMATION DELAY -----*/
 
 // add animation delay for each skill_box
-var skills = document.querySelectorAll('.skills');
-var tools = document.querySelectorAll('.tools');
-
-// animation delay for skill/language box
-skills.forEach(box => {
-  // increase the delay
-  increaseDelay();
-  // add the new delay to the "box" element
-  let pop_delay = getComputedStyle(document.documentElement).getPropertyValue('--pop-delay');
-  box.style.animationDelay = pop_delay;
-});
-
-// reset the delay var to prevent a delay stack between skills and tools
-resetDelay();
-
-// animation delay for tool box
-tools.forEach(box => {
-  // increase the delay
-  increaseDelay();
-  // add the new delay to the "box" element
-  let pop_delay = getComputedStyle(document.documentElement).getPropertyValue('--pop-delay');
-  box.style.animationDelay = pop_delay;
-});
+function popAnimationDelay() {
+  var skills = document.querySelectorAll('.skills');
+  var tools = document.querySelectorAll('.tools');
+  
+  // animation delay for skill/language box
+  skills.forEach(box => {
+    // increase the delay
+    increaseDelay();
+    // add the new delay to the "box" element
+    let pop_delay = getComputedStyle(document.documentElement).getPropertyValue('--pop-delay');
+    box.style.animationDelay = pop_delay;
+  });
+  
+  // reset the delay var to prevent a delay stack between skills and tools
+  resetDelay();
+  
+  // animation delay for tool box
+  tools.forEach(box => {
+    // increase the delay
+    increaseDelay();
+    // add the new delay to the "box" element
+    let pop_delay = getComputedStyle(document.documentElement).getPropertyValue('--pop-delay');
+    box.style.animationDelay = pop_delay;
+  });
+}
 
 // reset the delay var in :root element in css file
 function resetDelay() {
@@ -120,22 +118,7 @@ function increaseDelay(pop_delay) {
   root_theme.style.setProperty('--pop-delay', delay+"s");
 }
 
-/*----- PROJECT POP ANIMATION -----*/
-
-const startAnimationPop = (entries, observerPop) => {
-  entries.forEach(entry => {
-    entry.target.classList.toggle("pop_animation", entry.isIntersecting);
-  });
-};
-
-const observerPop = new IntersectionObserver(startAnimationPop);
-const elementsPop = document.querySelectorAll('.popElement');
-
-elementsPop.forEach(elPop => {
-  observerPop.observe(elPop, options);
-});
-
-/*----- SKILLS SELECT -----*/
+/*----- SKILLS SELECT TOOGLE -----*/
 
 let select_languages = document.querySelector('#select_languages');
 let select_tools = document.querySelector('#select_tools');
@@ -176,7 +159,7 @@ function toggle() {
   skills_tools.classList.toggle("skills_container_display_none");
 }
 
-/*----- HIDDEN PROJECT -----*/
+/*----- REVEAL HIDDEN PROJECTS -----*/
 
 let hidden_projects = document.querySelectorAll("#hidden_project");
 let view_more_project = document.querySelector(".view_more_project");
@@ -224,6 +207,4 @@ function display_btn() {
 
 let year = document.querySelector(".year");
 let date = new Date().getFullYear();
-
 year.innerHTML = date;
-
