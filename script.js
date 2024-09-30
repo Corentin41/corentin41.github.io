@@ -33,6 +33,12 @@ menu.forEach(item => {
     });
 });
 
+/*----- DATE FOOTER -----*/
+
+let year = document.querySelector(".year");
+let date = new Date().getFullYear();
+year.innerHTML = date;
+
 /*----- ANIMATIONS -----*/
 
 const options = { root: null, rootMargin: '0px', threshold: 1 };
@@ -202,9 +208,3 @@ function display_btn() {
     view_less_project.style.display = "none";
   }
 }
-
-/*----- DATE FOOTER -----*/
-
-let year = document.querySelector(".year");
-let date = new Date().getFullYear();
-year.innerHTML = date;

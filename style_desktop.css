@@ -538,10 +538,6 @@
         color: #212529;
     }
 
-    /*.project_content>h1,h2 {
-        font-family: Arial, Helvetica, sans-serif;
-    }*/
-
     .project_content_container {
         display: flex;
         align-items: center;
