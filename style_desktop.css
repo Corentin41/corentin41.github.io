@@ -39,6 +39,10 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
+    a,span {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
     /*----- SLIDE ANIMATIONS -----*/
 
     .slide-in-from-left {
