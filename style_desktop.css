@@ -366,7 +366,7 @@
 
     .experience_box {
         width: 700px;
-        height: 40vh;
+        height: 400px;
         padding: 2%;
         margin: 2%;
         background-color: whitesmoke;
@@ -405,6 +405,10 @@
     }
 
     /*----- PROJETS -----*/
+
+    .projects {
+        margin-top: 20%;
+    }
 
     .projects_list {
         width: 100%;
