@@ -623,7 +623,6 @@
 
     /* Background de la popup */
     .overlay {
-        z-index: 3;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -640,8 +639,22 @@
         visibility: visible;
         opacity: 1;
     }
+  
+    .popup {
+        margin: 120px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 50%;
+        height: 80vh;
+        position: relative;
+    }
 
-    .overlay>a {
+    .content {
+        text-align: center;
+    }
+  
+    .popup .close {
         position: absolute;
         top: 20px;
         right: 30px;
@@ -649,9 +662,6 @@
         font-weight: bold;
         text-decoration: none;
         color: red;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
     }
 
     /*----- PROJET CONTENT -----*/
