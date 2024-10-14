@@ -165,28 +165,9 @@ function toggle() {
   skills_tools.classList.toggle("skills_container_display_none");
 }
 
-/*----- PROJECT POPUP SCROLL DISABLED -----*/
-
-let popup_btn = document.querySelectorAll(".box");
-let popup_close = document.querySelectorAll(".close");
-const body = document.querySelector('body');
-
-popup_btn.forEach(btn => {
-  btn.addEventListener("click", () => {
-    body.style.overflow = "hidden";
-  })
-});
-
-popup_close.forEach(close => {
-  close.addEventListener("click", () => {
-    body.style.overflow = "";
-  })
-});
-
-
 /*----- REVEAL HIDDEN PROJECTS -----*/
 
-let hidden_projects = document.querySelectorAll(".hidden_project");
+let hidden_projects = document.querySelectorAll("#hidden_project");
 let view_more_project = document.querySelector(".view_more_project");
 let view_less_project = document.querySelector(".view_less_project");
 
