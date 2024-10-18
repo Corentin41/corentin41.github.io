@@ -512,11 +512,9 @@
     @keyframes project_pop {
         0%  {
             transform: scale(0.5);
-            opacity: 0%;
         }
         100% {
             transform: scale(1);
-            opacity: 100%;
         }
     }
 
@@ -598,6 +596,10 @@
         background-color: whitesmoke;
         border: 1px solid var(--blue);
         color: var(--blue);
+    }
+
+    .disabled>a {
+        cursor: not-allowed;
     }
 
     .hidden_projects_btn_container {
