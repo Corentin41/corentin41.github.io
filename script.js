@@ -33,11 +33,25 @@ menu.forEach(item => {
     });
 });
 
-/*----- DATE FOOTER -----*/
+/*----- DATE & AGE -----*/
 
-let year = document.querySelector(".year");
-let date = new Date().getFullYear();
-year.innerHTML = date;
+let date = new Date();
+
+// Dynamic age
+let ageDisplay = document.querySelector(".age");
+let myBirthYear = 2002;
+let currentYear = date.getFullYear();
+let currentDay = date.getDate();
+let currentMonth = date.getMonth() + 1; // + 1 because index between 0 and 11
+if (currentDay >= 25 && currentMonth >= 2) {
+  ageDisplay.innerHTML = currentYear - myBirthYear;
+} else {
+  ageDisplay.innerHTML = currentYear - myBirthYear - 1;
+}
+
+// Date footer
+let footerYearDisplay = document.querySelector(".year");
+footerYearDisplay.innerHTML = date.getFullYear();
 
 /*----- ANIMATIONS -----*/
 
