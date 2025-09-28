@@ -6,7 +6,7 @@
         --background: #DEE2E6;
         --black: #212529;
         --white: #F8F9FA;
-        --blue: #0553B1; 
+        --blue: #0553B1;
         --shadow: #0000002e;
         --pop-delay: 0.0s;
     }
@@ -50,7 +50,8 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    a,span {
+    a,
+    span {
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -59,30 +60,32 @@
     .slide-in-from-left {
         animation: 1.0s ease-out 0s 1 slideInFromLeft forwards;
     }
-      
+
     @keyframes slideInFromLeft {
         0% {
-          transform: translateX(-50%);
-          opacity: 0%;
+            transform: translateX(-50%);
+            opacity: 0%;
         }
+
         100% {
-          transform: translateX(0);
-          opacity: 100%;
+            transform: translateX(0);
+            opacity: 100%;
         }
     }
 
     .slide-in-from-right {
         animation: 1.0s ease-out 0s 1 slideInFromRight forwards;
     }
-      
+
     @keyframes slideInFromRight {
         0% {
-          transform: translateX(50%);
-          opacity: 0%;
+            transform: translateX(50%);
+            opacity: 0%;
         }
+
         100% {
-          transform: translateX(0);
-          opacity: 100%;
+            transform: translateX(0);
+            opacity: 100%;
         }
     }
 
@@ -117,7 +120,7 @@
         position: relative;
     }
 
-    nav a:after {    
+    nav a:after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
         top: 150%;
@@ -129,12 +132,12 @@
         background: var(--white);
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
-      }
-      
-      nav a:hover:after { 
-        width: 100%; 
-        left: 0; 
-      }
+    }
+
+    nav a:hover:after {
+        width: 100%;
+        left: 0;
+    }
 
     /*----- HEADER -----*/
 
@@ -157,7 +160,7 @@
     }
 
     .title>a {
-        text-decoration: none;  
+        text-decoration: none;
         color: var(--black);
     }
 
@@ -188,12 +191,12 @@
         border-radius: 50%;
         border: 5px solid var(--blue);
         background-color: var(--white);
-        box-shadow: 
-        rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px,
-        rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        box-shadow:
+            rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px,
+            rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px,
+            rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
     .avatar {
@@ -211,7 +214,7 @@
 
     .presentation_txt {
         color: var(--black);
-    }   
+    }
 
     /*----- DOWNLOAD BUTTON -----*/
 
@@ -310,13 +313,14 @@
         position: relative;
         display: inline-block;
     }
-      
+
     .skill_box_tooltip .tooltiptext {
         visibility: hidden;
         width: 120px;
         bottom: 120%;
         left: 50%;
-        margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+        margin-left: -60px;
+        /* Use half of the width (120/2 = 60), to center the tooltip */
         background-color: var(--blue);
         color: var(--white);
         text-align: center;
@@ -326,7 +330,7 @@
         position: absolute;
         z-index: 1;
     }
-      
+
     .skill_box_tooltip:hover .tooltiptext {
         visibility: visible;
     }
@@ -335,20 +339,23 @@
         visibility: visible;
         animation: 0.3s ease-out 0s 1 slideInFromTop forwards;
     }
-      
+
     @keyframes slideInFromTop {
         0% {
-          transform: translateY(-2vh);
-          opacity: 50%;
+            transform: translateY(-2vh);
+            opacity: 50%;
         }
+
         100% {
-          transform: translateY(0vh);
-          opacity: 100%;
+            transform: translateY(0vh);
+            opacity: 100%;
         }
     }
 
     @keyframes skill_pop {
-        50%  {transform: scale(1.2);}
+        50% {
+            transform: scale(1.2);
+        }
     }
 
     /*----- EXPERIENCES -----*/
@@ -377,13 +384,13 @@
     .bullet_exp_1 {
         margin-top: 10%;
     }
-    
+
     .bullet_exp_2 {
         margin-top: 40%;
     }
 
     .bullet_exp_3 {
-        margin-top: 70%; 
+        margin-top: 70%;
     }
 
     .exp_box {
@@ -448,9 +455,10 @@
     }
 
     @keyframes project_pop {
-        0%  {
+        0% {
             transform: scale(0.5);
         }
+
         100% {
             transform: scale(1);
         }
@@ -493,7 +501,7 @@
     .project_details {
         width: 100%;
         height: 20vh;
-        
+
     }
 
     .project_label {
@@ -501,9 +509,9 @@
     }
 
     .project_label>span {
-        background-color: var(--white);
+        background-color: var(--blue);
         border-radius: 10px;
-        color: var(--black);
+        color: var(--white);
         padding: 1% 2% 1% 2%;
         margin-right: 1%;
         box-shadow: 0 3px 5px var(--shadow);
@@ -584,8 +592,13 @@
         width: 100%;
     }
 
-    .project_content_smartphone_text>p {
-        margin-bottom: 5%;
+    .project_content_smartphone_text {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        background-color: var(--white);
+        border-radius: 10px;
+        padding: 1% 2% 1% 2%;
+        box-shadow: 0 3px 5px var(--shadow);
     }
 
     .smartphone {
@@ -597,10 +610,10 @@
         border-top-width: 60px;
         border-bottom-width: 60px;
         border-radius: 36px;
-      }
-      
-      /* The horizontal line on the top of the device */
-      .smartphone:before {
+    }
+
+    /* The horizontal line on the top of the device */
+    .smartphone:before {
         content: '';
         display: block;
         width: 60px;
@@ -611,10 +624,10 @@
         transform: translate(-50%, -50%);
         background: #333;
         border-radius: 10px;
-      }
-      
-      /* The circle on the bottom of the device */
-      .smartphone:after {
+    }
+
+    /* The circle on the bottom of the device */
+    .smartphone:after {
         content: '';
         display: block;
         width: 35px;
@@ -625,12 +638,12 @@
         transform: translate(-50%, -50%);
         background: #333;
         border-radius: 50%;
-      }
-      
-      /* The screen (or content) of the device */
-      .smartphone .content {
+    }
+
+    /* The screen (or content) of the device */
+    .smartphone .content {
         background: var(--black);
-      }
+    }
 
     /*----- FOOTER -----*/
     footer {
@@ -672,5 +685,5 @@
         color: var(--black);
     }
 
-    
+
 }

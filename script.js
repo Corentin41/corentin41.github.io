@@ -6,31 +6,31 @@ let ulMobile = document.querySelector(".ulMobile");
 let restart = false;
 
 btnBurger.addEventListener("click", function () {
-    if (restart == false) {
-        navMobile.style.width = "300px";
-        ulMobile.style.display = "block";
-        btnBurger.classList.add("menuBurgerOpen");
-        restart = true;
-    }
+  if (restart == false) {
+    navMobile.style.width = "300px";
+    ulMobile.style.display = "block";
+    btnBurger.classList.add("menuBurgerOpen");
+    restart = true;
+  }
 
-    else {
-        navMobile.style.width = "0vw";
-        ulMobile.style.display = "none";
-        btnBurger.classList.remove("menuBurgerOpen");
-        restart = false;
-    }
+  else {
+    navMobile.style.width = "0vw";
+    ulMobile.style.display = "none";
+    btnBurger.classList.remove("menuBurgerOpen");
+    restart = false;
+  }
 })
 
 // Click sur un élément du menu le fait disparaître
 let menu = document.querySelectorAll(".menu");
 
 menu.forEach(item => {
-    item.addEventListener("click", () => {
-        navMobile.style.width = "0vw";
-        ulMobile.style.display = "none";
-        btnBurger.classList.remove("menuBurgerOpen");
-        restart = false;
-    });
+  item.addEventListener("click", () => {
+    navMobile.style.width = "0vw";
+    ulMobile.style.display = "none";
+    btnBurger.classList.remove("menuBurgerOpen");
+    restart = false;
+  });
 });
 
 /*----- DATE & AGE -----*/
@@ -39,15 +39,18 @@ let date = new Date();
 
 // Dynamic age
 let ageDisplay = document.querySelector(".age");
-let myBirthYear = 2002;
-let currentYear = date.getFullYear();
-let currentDay = date.getDate();
-let currentMonth = date.getMonth() + 1; // + 1 because index between 0 and 11
-if (currentDay >= 25 && currentMonth >= 2) {
-  ageDisplay.innerHTML = currentYear - myBirthYear;
-} else {
-  ageDisplay.innerHTML = currentYear - myBirthYear - 1;
+if (ageDisplay != null) {
+  let myBirthYear = 2002;
+  let currentYear = date.getFullYear();
+  let currentDay = date.getDate();
+  let currentMonth = date.getMonth() + 1; // + 1 because index between 0 and 11
+  if (currentDay >= 25 && currentMonth >= 2) {
+    ageDisplay.innerHTML = currentYear - myBirthYear;
+  } else {
+    ageDisplay.innerHTML = currentYear - myBirthYear - 1;
+  }
 }
+
 
 // Date footer
 let footerYearDisplay = document.querySelector(".year");
@@ -97,7 +100,7 @@ elementsSkillsPop.forEach(element => {
 function popAnimationDelay() {
   var skills = document.querySelectorAll('.skills');
   var tools = document.querySelectorAll('.tools');
-  
+
   // animation delay for skill/language box
   skills.forEach(box => {
     // increase the delay
@@ -106,10 +109,10 @@ function popAnimationDelay() {
     let pop_delay = getComputedStyle(document.documentElement).getPropertyValue('--pop-delay');
     box.style.animationDelay = pop_delay;
   });
-  
+
   // reset the delay var to prevent a delay stack between skills and tools
   resetDelay();
-  
+
   // animation delay for tool box
   tools.forEach(box => {
     // increase the delay
@@ -130,12 +133,12 @@ function resetDelay() {
 function increaseDelay(pop_delay) {
   // get the pop delay and transform from string to int
   pop_delay = getComputedStyle(document.documentElement).getPropertyValue('--pop-delay');
-  let delay = pop_delay.replace("s","");
+  let delay = pop_delay.replace("s", "");
   // increase delay with 0.1s for each skill box
   delay = parseFloat(delay) + parseFloat('0.1');
   // set the new var in the css
   const root_theme = document.querySelector(':root');
-  root_theme.style.setProperty('--pop-delay', delay+"s");
+  root_theme.style.setProperty('--pop-delay', delay + "s");
 }
 
 /*----- SKILLS SELECT TOOGLE -----*/
