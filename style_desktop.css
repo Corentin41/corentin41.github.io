@@ -685,5 +685,10 @@
         color: var(--black);
     }
 
+    .legal_notice {
+        color: var(--white);
+        text-decoration: none;
+    }
+
 
 }
