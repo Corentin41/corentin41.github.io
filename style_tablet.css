@@ -710,7 +710,6 @@
     /*----- FOOTER -----*/
     footer {
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
         width: 100%;
         left: 0;
         bottom: 0;
@@ -745,11 +744,6 @@
 
     .github svg:hover {
         color: var(--black);
-    }
-
-    .legal_notice {
-        color: var(--white);
-        text-decoration: none;
     }
 
 }
